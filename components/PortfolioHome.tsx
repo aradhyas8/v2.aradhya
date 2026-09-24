@@ -58,10 +58,10 @@ const roles = [
     tech: "Auth0 · CIAM",
   },
   {
-    company: "CIBC",
-    position: "Business Analyst, Fraud Technology",
-    time: "2024–present",
-    dateTime: "2024-01",
+    company: "CIBC · Fraud Technology",
+    position: "Business Analyst",
+    time: "2023–2026",
+    dateTime: "2023-01",
     bullets: [
       "Built Python automation scripts and reconciliation pipelines using pandas, NumPy, SQL, and PostgreSQL to identify SLA breaches, queue mismatches, duplicate fraud cases, and workflow anomalies, reducing manual review effort by approximately 40%.",
       "Developed internal tooling to support fraud case assignment, investigator queue monitoring, exception handling, and operational reporting across high-volume fraud workflows.",
@@ -71,7 +71,7 @@ const roles = [
   },
   {
     company: "Fibra Inc.",
-    position: "Software Engineer Intern, Backend (Part-Time)",
+    position: "Software Engineer",
     time: "2023",
     dateTime: "2023-01",
     bullets: [
@@ -163,8 +163,8 @@ export default function PortfolioHome() {
                 <li className="tl-item" key={role.company} data-reveal>
                   <time dateTime={role.dateTime} className="tl-date">{role.time}</time>
                   <div className="tl-body">
-                    <h3>{role.company}</h3>
-                    <p className="role-position">{role.position}</p>
+                    <h3>{role.position}</h3>
+                    <p className="role-position">{role.company}</p>
                     <ul className="role-bullets">
                       {role.bullets.map((b) => <li key={b}>{b}</li>)}
                     </ul>

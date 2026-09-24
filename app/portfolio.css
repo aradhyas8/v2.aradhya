@@ -54,7 +54,6 @@
   flex-direction: column;
   gap: var(--space-sm);
   padding-block-end: var(--space-md);
-  border-block-end: var(--rule-hair) solid var(--color-rule);
 }
 .identity-name {
   display: block;
@@ -158,9 +157,7 @@ a.identity-name:hover { opacity: 0.85; }
   grid-template-columns: 7.5rem minmax(0, 1fr);
   gap: var(--space-sm);
   padding-block: var(--space-xs);
-  border-block-end: 1px solid var(--color-rule);
 }
-.about-facts > div:first-child { border-block-start: 1px solid var(--color-rule); }
 .about-facts dt { color: var(--color-muted); font-size: var(--text-sm); }
 .about-facts dd { margin: 0; font-size: var(--text-sm); font-weight: 500; }
 @media (min-width: 60rem) {

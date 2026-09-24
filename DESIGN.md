@@ -11,7 +11,7 @@ A software developer's portfolio for hiring teams and collaborators. Shipped wor
 - Footer: "© year name" only; the rail carries identity and socials.
 
 ## Visual system
-- Warm cream paper background with dark charcoal ink and terracotta rust-orange accent. Dark theme: warm near-black paper, cream ink, lifted rust accent; follows system preference until the top-right "Dark mode / Light mode" toggle stores a choice (localStorage "theme").
+- Warm cream paper background with dark charcoal ink and terracotta rust-orange accent. Dark theme: warm near-black paper, cream ink, lifted rust accent; defaults to light until the top-right "Dark mode / Light mode" toggle stores a choice (localStorage "theme").
 - Bricolage Grotesque (800) for display headings and the identity title; IBM Plex Sans for body and navigation; IBM Plex Mono (12px) for tech-stack lines only.
 - Type sizes come only from tokens.css (--text-xs/sm/base/md/lg/xl/display). Uppercase is reserved for the identity name and 12px meta labels; project, company, and section names are sentence case.
 - Hairlines organize rows. No glow, glass, fake device chrome, generic metric cards, or ornamental pills.
