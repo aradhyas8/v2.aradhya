@@ -17,9 +17,20 @@ export const viewport: Viewport = {
 
 const themeScript = `try{var t=localStorage.getItem("theme");document.documentElement.dataset.theme=t==="dark"||t==="light"?t:matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"}catch(e){}`;
 
+const description = "Software engineer in Toronto. I build mobile products, document tools, and the services behind them.";
+
 export const metadata: Metadata = {
-  title: "Aradhya Singh — Software Developer",
-  description: "Aradhya Singh is a software developer in Toronto building backend systems and shipped digital products.",
+  // Absolute base for the share image; set NEXT_PUBLIC_SITE_URL if the site lives elsewhere.
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://aradhya.dev"),
+  title: "Aradhya Singh — Software Engineer",
+  description,
+  openGraph: {
+    title: "Aradhya Singh — Software Engineer",
+    description,
+    type: "website",
+    images: [{ url: "/og.png", width: 1200, height: 627, alt: "Aradhya Singh, software engineer in Toronto, with the Hushfield app" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/og.png"] },
 };
 
 export default function RootLayout({
