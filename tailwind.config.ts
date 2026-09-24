@@ -24,7 +24,31 @@ const config = {
       },
     },
     extend: {
+      fontFamily: {
+        display: ["var(--font-display)", ...defaultTheme.fontFamily.serif],
+        sans: ["var(--font-body)", "IBM Plex Sans", ...defaultTheme.fontFamily.sans],
+        mono: ["var(--font-mono)", ...defaultTheme.fontFamily.mono],
+      },
       colors: {
+        midgreen: {
+          DEFAULT: "#025259",
+          dark: "#01373d",
+          deep: "#012b2f",
+          surface: "#013e45",
+        },
+        salmon: {
+          DEFAULT: "#FF947A",
+          hover: "#FFA994",
+          subtle: "rgba(255, 148, 122, 0.15)",
+        },
+        cannoli: {
+          DEFAULT: "#F1F0E2",
+          muted: "#A5C2C4",
+        },
+        paper: "var(--color-paper)",
+        "paper-raised": "var(--color-paper-2)",
+        rule: "var(--color-rule)",
+        terracotta: "var(--color-accent)",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -77,6 +101,10 @@ const config = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+      },
+      transitionTimingFunction: {
+        "out-craft": "cubic-bezier(0.23, 1, 0.32, 1)",
+        "in-out-craft": "cubic-bezier(0.77, 0, 0.175, 1)",
       },
     },
   },
