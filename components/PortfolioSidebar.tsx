@@ -16,7 +16,7 @@ const socials = [
   },
   {
     label: "Email",
-    href: "mailto:aradhyas1809@gmail.com",
+    href: "mailto:aradhyas8@zohomailcloud.ca",
     icon: <path d="M2.5 4.5h19a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-19a1 1 0 0 1-1-1v-13a1 1 0 0 1 1-1Zm0 1.2 9.5 7.1 9.5-7.1" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round" />,
   },
 ];

@@ -59,27 +59,39 @@ const roles = [
   },
   {
     company: "CIBC",
-    position: "Business Analyst",
-    time: "2023–2026",
-    dateTime: "2023",
+    position: "Business Analyst, Fraud Technology",
+    time: "2024–present",
+    dateTime: "2024-01",
     bullets: [
-      "Engineered automated data extraction scripts reducing manual audit turnaround time.",
-      "Authored technical specifications and API contract requirements bridging banking logic with engineering.",
-      "Analyzed high-volume transactional datasets to detect operational bottlenecks and streamline reporting.",
+      "Built Python automation scripts and reconciliation pipelines using pandas, NumPy, SQL, and PostgreSQL to identify SLA breaches, queue mismatches, duplicate fraud cases, and workflow anomalies, reducing manual review effort by approximately 40%.",
+      "Developed internal tooling to support fraud case assignment, investigator queue monitoring, exception handling, and operational reporting across high-volume fraud workflows.",
+      "Investigated production workflow issues by analyzing transaction patterns, case routing logic, API responses, and data inconsistencies across CNP, tap, chip, debit, and e-Transfer fraud channels.",
     ],
-    tech: "SQL · Financial Data Modeling · API Contracts · System Architecture · Risk Analytics",
+    tech: "Python · pandas · NumPy · SQL · PostgreSQL",
   },
   {
-    company: "Fibra Inc",
-    position: "Software Engineer Intern",
+    company: "Fibra Inc.",
+    position: "Software Engineer Intern, Backend (Part-Time)",
     time: "2023",
-    dateTime: "2023",
+    dateTime: "2023-01",
     bullets: [
-      "Constructed backend endpoints in Node.js and MongoDB to sync telemetry in real time with mobile devices.",
-      "Integrated third-party hardware APIs and payment gateways with strict error handling.",
-      "Created automated test suites to ensure data reliability and accelerate release cycles.",
+      "Designed and built RESTful backend services using Node.js, Express.js, and PostgreSQL, including authentication endpoints, user-management APIs, normalized database schemas, and backend validation logic for the product’s beta launch.",
+      "Implemented authentication and identity controls using JWT, bcrypt hashing, request validation, and role-based access policies, securing all backend routes and standardizing authorization logic.",
+      "Optimized PostgreSQL schema design and query performance through indexing and normalization, improving average response time by approximately 35%.",
     ],
-    tech: "React · Node.js · Express · MongoDB · REST APIs · Automated Testing",
+    tech: "Node.js · Express.js · PostgreSQL · JWT · bcrypt",
+  },
+  {
+    company: "Score Media and Gaming",
+    position: "Quality Engineering Intern",
+    time: "2023",
+    dateTime: "2023-01",
+    bullets: [
+      "Designed and executed automated unit, functional, and regression test suites using Python, covering REST API responses, payment scenarios, geolocation checks, and regulatory compliance logic across Android, iOS, and web platforms.",
+      "Used Charles Proxy, Postman, Jira, TestRail, and CI/CD pipeline logs to debug API requests, reproduce defects, and validate fixes across UAT, staging, and production environments.",
+      "Automated QA reporting workflows with Python by generating TestRail test cases and Jira defect tickets from structured failure outputs, reducing manual reporting effort by approximately 50%.",
+    ],
+    tech: "Python · Charles Proxy · Postman · Jira · TestRail",
   },
 ];
 
@@ -181,8 +193,8 @@ export default function PortfolioHome() {
             <div className="contact-panel">
               <h3>Get in touch.</h3>
               <div className="contact-email">
-                <a href="mailto:aradhyas1809@gmail.com"><RippleText lines={["aradhyas1809@gmail.com"]} label="aradhyas1809@gmail.com" /></a>
-                <CopyEmail email="aradhyas1809@gmail.com" />
+                <a href="mailto:aradhyas8@zohomailcloud.ca"><RippleText lines={["aradhyas8@zohomailcloud.ca"]} label="aradhyas8@zohomailcloud.ca" /></a>
+                <CopyEmail email="aradhyas8@zohomailcloud.ca" />
               </div>
               <div className="contact-links">
                 <a href="https://www.linkedin.com/in/aradhyas8/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
